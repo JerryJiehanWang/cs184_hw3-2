@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../CGL/include/CGL/CGL.h
+misc.h
+../CGL/include/CGL/misc.h
+
+../CGL/include/CGL/color.h
+CGL.h
+../CGL/include/CGL/CGL.h
+string
+-
+
+../CGL/include/CGL/misc.h
+cmath
+-
+limits
+-
+algorithm
+-
+string
+-
+
+../CGL/include/CGL/spectrum.h
+CGL.h
+../CGL/include/CGL/CGL.h
+color.h
+../CGL/include/CGL/color.h
+
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/CGL/src/spectrum.cpp
+spectrum.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/CGL/src/spectrum.h
+stdio.h
+-
+string.h
+-
+ostream
+-
+sstream
+-
+

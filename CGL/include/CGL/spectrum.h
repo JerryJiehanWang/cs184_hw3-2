@@ -40,6 +40,10 @@ class Spectrum {
     return Spectrum(r + rhs.r, g + rhs.g, b + rhs.b);
   }
 
+  inline Spectrum operator+(const float n) const {
+    return Spectrum(r + n, g + n, b + n);
+  }
+
   inline Spectrum &operator+=(const Spectrum &rhs) {
     r += rhs.r;
     g += rhs.g;

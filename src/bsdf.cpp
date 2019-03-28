@@ -113,15 +113,12 @@ Spectrum MicrofacetBSDF::sample_f(const Vector3D& wo, Vector3D* wi, float* pdf) 
     return Spectrum();
   }
 
-  double p_h = (r1 * r2) / sin(theta_h);
+  double p_theta = ((2.0 * sin(theta_h)) / (pow(alpha, 2.0) * pow(cos(theta_h), 3.0))) /
+      exp(-(pow(tan(theta_h), 2.0) / pow(alpha, 2.0)));
+  double p_phi = 1.0 / (2 * PI);
+  double p_h = (p_theta * p_phi) / sin(theta_h);
   *pdf = p_h / (4.0 * dot(*wi, h));
 
-  assert(*pdf != 0.0);
-
-//  std::cout << "H" << std::endl;
-//  std::cout << h << std::endl;
-//  std::cout << "another" << std::endl;
-//  std::cout << (wi->unit() + wo.unit()) / 2 << std::endl;
   return MicrofacetBSDF::f(wo, *wi);
 }
 
@@ -185,9 +182,7 @@ bool BSDF::refract(const Vector3D& wo, Vector3D* wi, float ior) {
     return false;
   } else {
     *wi = Vector3D(-factor * wo.x, -factor * wo.y, sqrt(1 - factor * (1 - pow((wo.z),2))));
-    //std::cout << sqrt(1 - factor * (1 - pow((wo.z),2))) << std::endl;
     wi->z = wo.z >= 0 ? -wi->z : wi->z;
-
   }
   return true;
 }

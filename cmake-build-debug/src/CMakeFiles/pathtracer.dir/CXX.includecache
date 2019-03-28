@@ -24,6 +24,14 @@ vector3D.h
 iosfwd
 -
 
+../CGL/include/CGL/matrix4x4.h
+CGL.h
+../CGL/include/CGL/CGL.h
+vector4D.h
+../CGL/include/CGL/vector4D.h
+iosfwd
+-
+
 ../CGL/include/CGL/misc.h
 cmath
 -
@@ -56,57 +64,65 @@ ostream
 cmath
 -
 
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bsdf.cpp
-bsdf.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bsdf.h
+../CGL/include/CGL/vector4D.h
+CGL.h
+../CGL/include/CGL/CGL.h
+vector3D.h
+../CGL/include/CGL/vector3D.h
+ostream
+-
+cmath
+-
+
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/camera.cpp
+camera.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/camera.h
 iostream
 -
-algorithm
+sstream
 -
-utility
+fstream
 -
-math.h
--
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bsdf.h
-CGL/CGL.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/CGL.h
-CGL/spectrum.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/spectrum.h
-CGL/vector3D.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/vector3D.h
-CGL/matrix3x3.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/matrix3x3.h
-sampler.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/sampler.h
-image.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/image.h
-algorithm
--
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/image.h
-CGL/color.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/color.h
-CGL/spectrum.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/spectrum.h
-vector
--
-string.h
--
-cassert
--
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/random_util.h
-cstdlib
--
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/sampler.h
+CGL/misc.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/misc.h
 CGL/vector2D.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/vector2D.h
 CGL/vector3D.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/vector3D.h
-CGL/misc.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/misc.h
-random_util.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/random_util.h
+
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/camera.h
+iostream
+-
+collada/camera_info.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/camera_info.h
+CGL/matrix3x3.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/matrix3x3.h
+math.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/math.h
+ray.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/ray.h
+
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/camera_info.h
+collada_info.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/collada_info.h
+
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/collada_info.h
+string
+-
+vector
+-
+CGL/matrix4x4.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/CGL/matrix4x4.h
+
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/ray.h
+CGL/CGL.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/CGL.h
+CGL/vector3D.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/vector3D.h
+CGL/vector4D.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/vector4D.h
+CGL/matrix4x4.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/matrix4x4.h
+CGL/spectrum.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/spectrum.h
 

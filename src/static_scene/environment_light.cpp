@@ -37,12 +37,41 @@ void EnvironmentLight::init() {
 		}
 	}
 
+    //normalize pdf_envmap
+    for (int i = 0; i < w; i++) {
+      for (int j = 0; j < h; j++) {
+        pdf_envmap[i + j * w] = pdf_envmap[i + j * w] / sum;
+      }
+    }
+  std::cout << "Done Normalize." << std::endl;
+
   // TODO: 3.3 step 2
   // Store the marginal distribution for y to marginal_y. Make sure to normalize pdf_envmap.
+  for (int j = 0; j < h; j++) {
+    double marginal_dis = 0.0;
+    for (int i = 0; i < w; i++) {
+      for (int j_prime = 0; j_prime < j + 1; j_prime++) {
+        marginal_dis += pdf_envmap[i + j_prime * w];
+      }
+    }
+    marginal_y[j] = marginal_dis;
+  }
+
+  std::cout << "Done Calculating marginal_y." << std::endl;
 
   // TODO: 3.3 step 3
   // Store the conditional distribution for x given y to conds_y
-
+  //p(j) = F(j) - F(j - 1)
+  for (int j = 0; j < h; j++) {
+    double p_j = j == 0 ? marginal_y[j] : marginal_y[j] - marginal_y[j - 1];
+    for (int i = 0; i < w; i++) {
+      double sum = 0;
+      for (int i_prime = 0; i_prime < i; i_prime++) {
+        sum += pdf_envmap[i_prime + j * w];
+      }
+      conds_y[i + j * w] = sum / p_j;
+    }
+  }
 
 	if (true) {
     std::cout << "Saving out probability_debug image for debug." << std::endl;
@@ -129,20 +158,34 @@ Spectrum EnvironmentLight::sample_L(const Vector3D& p, Vector3D* wi,
                                     float* pdf) const {
   // TODO: 3.2
 	// First implement uniform sphere sampling for the environment light
+//	*wi = sampler_uniform_sphere.get_sample();
+//	*distToLight = INF_D;
+//	*pdf = 1.0 / (4 * PI);
+//
+//    Vector2D x_y = theta_phi_to_xy(dir_to_theta_phi(*wi));
+//    return bilerp(x_y);
 
   // TODO: 3.3
 	// Later implement full importance sampling
+    uint32_t w = envMap->w, h = envMap->h;
+	Vector2D sample = sampler_uniform2d.get_sample();
+	double r1 = sample[0];
+	double r2 = sample[1];
+	int y = std::upper_bound(marginal_y, marginal_y + h, r1) - marginal_y;
+	int x = std::upper_bound(conds_y + y * w, conds_y + (y + 1) * w, r2) - (conds_y + y * w);
 
-  return Spectrum();
+	*wi = theta_phi_to_dir(xy_to_theta_phi(Vector2D(x, y)));
+	*distToLight = INF_D;
+	*pdf = pdf_envmap[x + y * w] * (w * h) / (2 * pow(PI, 2) * sin_theta(*wi));
+  return bilerp(Vector2D(x, y));
 }
 
 Spectrum EnvironmentLight::sample_dir(const Ray& r) const {
   // TODO: 3.1
 	// Use the helper functions to convert r.d into (x,y)
 	// then bilerp the return value
-
-	return Spectrum();
-
+    Vector2D x_y = theta_phi_to_xy(dir_to_theta_phi(r.d));
+	return bilerp(x_y);
 }
 
 } // namespace StaticScene

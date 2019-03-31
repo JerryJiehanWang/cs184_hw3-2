@@ -15,29 +15,89 @@
 </head>
 <body>
 <br />
-<h1 align="middle">Assignment 3: PathTracer</h1>
-    <h2 align="middle">Your Name</h2>
+<h1 align="middle">Assignment 3-2: PathTracer</h1>
+    <h2 align="middle">Jiehan Wang</h2>
 
     <div class="padded">
-        <p>Use this section to write an overview of the assignment. All of the text in your write-up should be <em>in your own words</em>. If you need to add additional HTML features to this document, you can search the <a href="http://www.w3schools.com/">http://www.w3schools.com/</a> website for instructions. To edit the HTML, you can just copy and paste existing chunks and fill in the text and image file names appropriately.</p>
-        <o>The website writeup is intended to be a self-contained walkthrough of the assignment: we want this to be a piece of work which showcases your understanding of relevant concepts through both mesh images as well as written explanations about what you did to complete each part of the assignment. Try to be as clear and organized as possible when writing about your own output files or extensions to the assignment. We want to understand what you've achieved and how you've done it!</p> 
-        <p>If you are well-versed in web development, feel free to ditch this template and make a better looking page. Just make sure that you include all the components as we've laid them out here. </p>
+        <p>In this assignment, we implement BSDF for different materials to get the effect of different reflect and
+        refract properties. We also implement environment lighting and thin lens model to simulate the effect of real
+        camera.</p>
+    <h2 align="middle">Part 1:  Mirror and Glass</h2>
+        <p>In this part, we implement the effect when ray is shooting to a mirror or glass surface. Specifically,
+        for mirror surface, this is straight forward, because the outgoing ray is symmetric with respect of the
+        normal vector. For refraction, we first need to determine whether a total internal reflection has occured.
+        If it does, we only have to implement the reflection part. If not, we follow the Snell's law to calculate
+        the correct reflection and refraction rays, given the correct refraction index. And using Schlick's approximation
+        when sampling from a pixel to determine whether we sample refraction or reflection.</p>
 
-    <h2 align="middle">Part 1: Ray Generation and Intersection</h2>
-        <p>Describe what you did in Part 1. etc...</p>
+
         <div align="center">
             <table style="width=100%">
                 <tr>
                     <td align="middle">
-                    <img src="images/example_image.png" width="480px" />
-                    <figcaption align="middle">Results Caption: my bunny is the bounciest bunny</figcaption>
+                    <img src="images/p1_m0.png" width="480px" />
+                    <figcaption align="middle">Max ray depth: 0</figcaption>
+                    <td align="middle">
+                    <img src="images/p1_m1.png" width="480px" />
+                    <figcaption align="middle">Max ray depth: 1</figcaption>
+                    <td align="middle">
+                    <img src="images/p1_m2.png" width="480px" />
+                    <figcaption align="middle">Max ray depth: 2</figcaption>
+                </tr>
+                <tr>
+                <td align="middle">
+                <img src="images/p1_m3.png" width="480px" />
+                <figcaption align="middle">Max ray depth: 3</figcaption>
+                <td align="middle">
+                <img src="images/p1_m4.png" width="480px" />
+                <figcaption align="middle">Max ray depth: 4</figcaption>
+                <td align="middle">
+                <img src="images/p1_m5.png" width="480px" />
+                <figcaption align="middle">Max ray depth: 5</figcaption>
+                </tr>
+                <tr>
+                    <td align="middle">
+                        <img src="images/p1_m100.png" width="480px" />
+                        <figcaption align="middle">Max ray depth: 100</figcaption>
                 </tr>
             </table>
         </div>
-        <p>Here is an example of how to include a simple formula:</p>
-        <p align="middle"><pre align="middle">a^2 + b^2 = c^2</pre></p>
-        <p>or, alternatively, you can include an SVG image of a LaTex formula.</p>
-        <p>This time it's your job to copy-paste in the rest of the sections :)</p>
+
+        <ul>
+            <li>
+                m = 0: the only light we can see is the light that surface emits, so in this case we can only see
+                the light source.
+            </li>
+            <li>
+                m = 1: The spheres are not rendered, because we need at least 2 bounces to see the effect of reflection.
+                Essentially, reflection requires to shoot an additional ray when the camera hits the mirror surface.
+            </li>
+            <li>
+                m = 2: We see the reflection effects on both spheres, but no the refraction effect. That's because it
+                requires at least three bounces to see the effect of refraction, due to the fact that refraction need
+                one more bounce to escape from the glass sphere. The reflection on glass sphere is very dim, because
+                most of the ray are refracted, but not reflected.
+            </li>
+            <li>
+                m = 3: The mirror sphere looks better, because more rays are bounced on the surface. For the glass sphere,
+                we start to observe the refraction effect.
+            </li>
+            <li>
+                m = 4: The mirror sphere doesn't change too much, but it's still getting better. And we see a high light
+                area under the glass sphere. That's because with one more bounce, the lights are able to get out from
+                the sphere and refracted to the floor.
+            </li>
+            <li>
+                m = 5: We see a highlight area on the blue war. That's because with one more bounce, the light on the floor
+                are further reflected by the floor (diffusive surface) to the wall.
+            </li>
+            <li>
+                m = 100: With high bounces, the Russian Roulette takes control the number of bounces for each sample.
+                Thus, we get a more vivid image in this case.
+            </li>
+        </ul>
+
+        <h2 align="middle">Part 2: Microfacet Materials</h2>
 
 
 

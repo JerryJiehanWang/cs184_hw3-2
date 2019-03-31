@@ -17,11 +17,17 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbb4db2-f6b7-48d3-8cf9-029cd2207a79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_00001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_0005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBdragon_cam_settings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p1_m0.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p1_m0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p1_m1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p1_m1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p1_m100.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p1_m100.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p1_m2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p1_m2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p1_m3.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p1_m3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p1_m4.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p1_m4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p1_m5.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p1_m5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pathtracer" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pathtracer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/bsdf.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/bsdf.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bsdf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/bsdf.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,13 +59,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="6122" />
+          <entry key="cpp" value="6136" />
           <entry key="h" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="6134" />
+          <entry key="ObjectiveC" value="6148" />
         </counts>
       </usages-collector>
     </session>
@@ -69,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pathtracer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="562" column="56" lean-forward="true" selection-start-line="562" selection-start-column="56" selection-end-line="562" selection-end-column="56" />
+            <state relative-caret-position="6094">
+              <caret line="564" column="54" selection-start-line="564" selection-start-column="54" selection-end-line="564" selection-end-column="54" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -87,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bsdf.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state relative-caret-position="137">
+              <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -99,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camera.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="594">
-              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -156,9 +162,9 @@
       <list>
         <option value="$PROJECT_DIR$/CGL/include/CGL/spectrum.h" />
         <option value="$PROJECT_DIR$/src/static_scene/environment_light.cpp" />
-        <option value="$PROJECT_DIR$/src/bsdf.cpp" />
-        <option value="$PROJECT_DIR$/src/pathtracer.cpp" />
         <option value="$PROJECT_DIR$/src/camera.cpp" />
+        <option value="$PROJECT_DIR$/src/pathtracer.cpp" />
+        <option value="$PROJECT_DIR$/src/bsdf.cpp" />
       </list>
     </option>
   </component>
@@ -254,7 +260,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pathtracer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-t 8 -s 1 -l 1 -m 10 -r 480 360 ../dae/sky/CBspheres.dae" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PathTracer" TARGET_NAME="pathtracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PathTracer" RUN_TARGET_NAME="pathtracer">
+    <configuration name="pathtracer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-t 8 -s 64 -l 4 -m 10 -r 480 360 ../dae/sky/CBdragon_microfacet_au.dae" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PathTracer" TARGET_NAME="pathtracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PathTracer" RUN_TARGET_NAME="pathtracer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -283,12 +289,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553186189987</updated>
-      <workItem from="1553186192563" duration="41894000" />
+      <workItem from="1553186192563" duration="45063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41894000" />
+    <option name="totallyTimeSpent" value="45063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -461,32 +467,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bsdf.cpp">
+    <entry file="file://$PROJECT_DIR$/src/camera.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state relative-caret-position="594">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pathtracer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="562" column="56" lean-forward="true" selection-start-line="562" selection-start-column="56" selection-end-line="562" selection-end-column="56" />
+        <state relative-caret-position="6094">
+          <caret line="564" column="54" selection-start-line="564" selection-start-column="54" selection-end-line="564" selection-end-column="54" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera.cpp">
+    <entry file="file://$PROJECT_DIR$/src/bsdf.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        <state relative-caret-position="137">
+          <caret line="101" column="28" lean-forward="true" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>

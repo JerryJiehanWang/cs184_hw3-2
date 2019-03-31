@@ -53,7 +53,7 @@ double MicrofacetBSDF::D(const Vector3D& h) {
   // TODO: 2.2
   // Compute Beckmann normal distribution function (NDF) here.
   // You will need the roughness alpha.
-  //double alpha = 0.5;
+  //double alpha = 0.005;
   double theta = acos(cos_theta(h));
   double tan_theta_square = pow(tan(theta), 2);
   double numerator = exp(-(tan_theta_square / pow(alpha, 2)));
@@ -113,7 +113,7 @@ Spectrum MicrofacetBSDF::sample_f(const Vector3D& wo, Vector3D* wi, float* pdf) 
     return Spectrum();
   }
 
-  double p_theta = ((2.0 * sin(theta_h)) / (pow(alpha, 2.0) * pow(cos(theta_h), 3.0))) /
+  double p_theta = ((2.0 * sin(theta_h)) / (pow(alpha, 2.0) * pow(cos(theta_h), 3.0))) *
       exp(-(pow(tan(theta_h), 2.0) / pow(alpha, 2.0)));
   double p_phi = 1.0 / (2 * PI);
   double p_h = (p_theta * p_phi) / sin(theta_h);

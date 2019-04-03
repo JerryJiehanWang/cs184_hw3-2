@@ -177,7 +177,7 @@ Spectrum EnvironmentLight::sample_L(const Vector3D& p, Vector3D* wi,
 	*wi = theta_phi_to_dir(xy_to_theta_phi(Vector2D(x, y)));
 	*distToLight = INF_D;
 	*pdf = pdf_envmap[x + y * w] * (w * h) / (2 * pow(PI, 2) * sin_theta(*wi));
-  return bilerp(Vector2D(x, y));
+    return envMap->data[x + y * w];
 }
 
 Spectrum EnvironmentLight::sample_dir(const Ray& r) const {

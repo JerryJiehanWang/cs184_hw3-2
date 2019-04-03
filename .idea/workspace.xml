@@ -17,52 +17,31 @@
   <component name="ChangeListManager">
     <list default="true" id="cdbb4db2-f6b7-48d3-8cf9-029cd2207a79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p1_m0_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p1_m100_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p1_m1_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p1_m2_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p1_m3_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p1_m4_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p1_m5_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_0005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_0005_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_005_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_025.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_025_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_alpha_05_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_bunny_al.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_bunny_al_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_bunny_importance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_bunny_importance_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_bunny_uniform.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_bunny_uniform_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_dragon_al.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_dragon_al_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_importance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_importance_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_uniform.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p2_uniform_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_00001_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_0005_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_001_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/p4_b_01_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_alpha = 0.5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_screenshot_3-23_17-7-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_screenshot_3-23_17-7-4_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_screenshot_3-24_14-36-42_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_screenshot_3-24_15-11-9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_screenshot_3-24_15-11-9_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_screenshot_3-25_17-18-39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBbunny_microfacet_cu_screenshot_3-25_17-18-39_rate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBdragon_microfacet_au_screenshot_3-30_22-4-53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CBdragon_microfacet_au_screenshot_3-30_22-4-53_rate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CBdragon_cam_settings.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p3_bunny_cu_importance_256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p3_bunny_importance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p3_bunny_uniform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p4_d_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p4_d_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p4_d_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p4_d_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p4_d_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/p4_d_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/p3_bunny_cu_importance_rate.png" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/p3_bunny_cu_importance_rate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/p3_bunny_importance_rate.png" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/p3_bunny_importance_rate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/p3_bunny_uniform_rate.png" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/p3_bunny_uniform_rate.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/pathtracer" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pathtracer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/probability_debug.png" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/probability_debug.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/probability_debug.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/pathtracer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/pathtracer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/static_scene/environment_light.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/pathtracer.dir/static_scene/environment_light.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/p3_bunny_cu_importance.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p3_bunny_cu_importance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/p3_bunny_cu_uniform.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p3_bunny_cu_uniform.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/p3_bunny_importance.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p3_bunny_importance.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/images/p3_bunny_uniform.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/images/p3_bunny_uniform.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pathtracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/pathtracer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static_scene/environment_light.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/static_scene/environment_light.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,26 +77,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="6147" />
+          <entry key="cpp" value="6250" />
           <entry key="h" value="12" />
-          <entry key="html" value="2754" />
+          <entry key="html" value="7928" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2754" />
-          <entry key="ObjectiveC" value="6159" />
+          <entry key="HTML" value="7928" />
+          <entry key="ObjectiveC" value="6262" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pathtracer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="565" column="44" selection-start-line="565" selection-start-column="44" selection-end-line="565" selection-end-column="44" />
+            <state relative-caret-position="148">
+              <caret line="557" column="45" selection-start-line="557" selection-start-column="45" selection-end-line="557" selection-end-column="45" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -128,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pathtracer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4202">
+            <state relative-caret-position="296">
               <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
             </state>
           </provider>
@@ -137,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static_scene/environment_light.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="157" column="55" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
+            <state relative-caret-position="268">
+              <caret line="165" column="25" lean-forward="true" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -146,11 +125,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2178">
-              <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
+            <state relative-caret-position="3440">
+              <caret line="271" column="72" selection-start-line="271" selection-start-column="72" selection-end-line="271" selection-end-column="72" />
+              <folding>
+                <element signature="e#7302#7320#0" expanded="true" />
+                <element signature="e#9860#9878#0" expanded="true" />
+                <element signature="e#10392#10410#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camera.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="559">
+              <caret line="192" column="27" selection-start-line="192" selection-start-column="27" selection-end-line="192" selection-end-column="27" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -194,7 +178,6 @@
       <find>+</find>
       <find>h =</find>
       <find>sqrt</find>
-      <find>h =</find>
       <find>dir_to</find>
       <find>sample_dir</find>
       <find>INF</find>
@@ -216,11 +199,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CGL/include/CGL/spectrum.h" />
-        <option value="$PROJECT_DIR$/src/camera.cpp" />
         <option value="$PROJECT_DIR$/src/bsdf.cpp" />
-        <option value="$PROJECT_DIR$/docs/index.html" />
-        <option value="$PROJECT_DIR$/src/static_scene/environment_light.cpp" />
+        <option value="$PROJECT_DIR$/src/camera.cpp" />
         <option value="$PROJECT_DIR$/src/pathtracer.cpp" />
+        <option value="$PROJECT_DIR$/src/static_scene/environment_light.cpp" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
@@ -321,7 +304,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pathtracer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-t 8 -s 1 -l 1 -m 10 -r 480 360 -b 0.01 -d 1.0 ../dae/sky/CBdragon.dae" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PathTracer" TARGET_NAME="pathtracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PathTracer" RUN_TARGET_NAME="pathtracer">
+    <configuration name="pathtracer" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-t 8 -s 4 -l 64 -m 5 -r 800 600 -e ../exr/field.exr -f p3_bunny_cu_importance.png ../dae/sky/bunny_microfacet_cu_unlit.dae" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PathTracer" TARGET_NAME="pathtracer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PathTracer" RUN_TARGET_NAME="pathtracer">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -351,12 +334,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553186189987</updated>
       <workItem from="1553186192563" duration="50467000" />
-      <workItem from="1554040717968" duration="235000" />
+      <workItem from="1554040717968" duration="9097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50709000" />
+    <option name="totallyTimeSpent" value="59564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -499,30 +482,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pathtracer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4202">
-          <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
-          <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camera.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/camera.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2200">
@@ -539,20 +498,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static_scene/environment_light.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="157" column="55" selection-start-line="157" selection-start-column="55" selection-end-line="157" selection-end-column="55" />
+        <state relative-caret-position="268">
+          <caret line="165" column="25" lean-forward="true" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pathtracer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pathtracer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="565" column="44" selection-start-line="565" selection-start-column="44" selection-end-line="565" selection-end-column="44" />
+        <state relative-caret-position="148">
+          <caret line="557" column="45" selection-start-line="557" selection-start-column="45" selection-end-line="557" selection-end-column="45" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="192" column="27" selection-start-line="192" selection-start-column="27" selection-end-line="192" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3440">
+          <caret line="271" column="72" selection-start-line="271" selection-start-column="72" selection-end-line="271" selection-end-column="72" />
+          <folding>
+            <element signature="e#7302#7320#0" expanded="true" />
+            <element signature="e#9860#9878#0" expanded="true" />
+            <element signature="e#10392#10410#0" expanded="true" />
           </folding>
         </state>
       </provider>

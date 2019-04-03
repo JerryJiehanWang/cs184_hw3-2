@@ -62,12 +62,6 @@ CGL.h
 color.h
 ../CGL/include/CGL/color.h
 
-../CGL/include/CGL/timer.h
-CGL.h
-../CGL/include/CGL/CGL.h
-chrono
--
-
 ../CGL/include/CGL/vector2D.h
 CGL.h
 ../CGL/include/CGL/CGL.h
@@ -92,22 +86,6 @@ vector3D.h
 ostream
 -
 cmath
--
-
-../CGL/include/GL/glew.h
-stddef.h
--
-inttypes.h
--
-stdint.h
--
-inttypes.h
--
-Availability.h
--
-OpenGL/glu.h
--
-GL/glu.h
 -
 
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bbox.h
@@ -136,72 +114,6 @@ image.h
 algorithm
 -
 
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bvh.h
-static_scene/scene.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/scene.h
-static_scene/aggregate.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/aggregate.h
-vector
--
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/camera.h
-iostream
--
-collada/camera_info.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/camera_info.h
-CGL/matrix3x3.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/matrix3x3.h
-math.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/math.h
-ray.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/ray.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/camera_info.h
-collada_info.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/collada_info.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/collada_info.h
-string
--
-vector
--
-CGL/matrix4x4.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/CGL/matrix4x4.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/material_info.h
-CGL/color.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/CGL/color.h
-collada_info.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/collada_info.h
-../bsdf.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bsdf.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/polymesh_info.h
-CGL/vector2D.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/CGL/vector2D.h
-collada_info.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/collada_info.h
-material_info.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/material_info.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/halfEdgeMesh.h
-set
--
-map
--
-list
--
-vector
--
-utility
--
-iostream
--
-CGL/CGL.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/CGL.h
-collada/polymesh_info.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/collada/polymesh_info.h
-
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/image.h
 CGL/color.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/color.h
@@ -225,72 +137,6 @@ CGL/misc.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/misc.h
 bsdf.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bsdf.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/pathtracer.cpp
-pathtracer.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/pathtracer.h
-bsdf.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bsdf.h
-ray.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/ray.h
-stack
--
-random
--
-algorithm
--
-sstream
--
-CGL/CGL.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/CGL.h
-CGL/vector3D.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/vector3D.h
-CGL/matrix3x3.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/matrix3x3.h
-CGL/lodepng.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/lodepng.h
-GL/glew.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/GL/glew.h
-static_scene/sphere.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/sphere.h
-static_scene/triangle.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/triangle.h
-static_scene/light.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/light.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/pathtracer.h
-stack
--
-thread
--
-atomic
--
-mutex
--
-condition_variable
--
-vector
--
-algorithm
--
-CGL/timer.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/CGL/timer.h
-bvh.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/bvh.h
-camera.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/camera.h
-sampler.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/sampler.h
-image.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/image.h
-work_queue.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/work_queue.h
-intersection.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/intersection.h
-static_scene/scene.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/scene.h
-static_scene/environment_light.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/environment_light.h
 
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/random_util.h
 cstdlib
@@ -318,9 +164,15 @@ CGL/misc.h
 random_util.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/random_util.h
 
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/aggregate.h
-scene.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/scene.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/environment_light.cpp
+environment_light.h
+/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/environment_light.h
+algorithm
+-
+iostream
+-
+fstream
+-
 
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/environment_light.h
 ../sampler.h
@@ -331,28 +183,6 @@ scene.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/scene.h
 CGL/lodepng.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/CGL/lodepng.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/light.h
-CGL/vector3D.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/CGL/vector3D.h
-CGL/matrix3x3.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/CGL/matrix3x3.h
-CGL/spectrum.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/CGL/spectrum.h
-../sampler.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/sampler.h
-../image.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/image.h
-scene.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/scene.h
-object.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/object.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/object.h
-../halfEdgeMesh.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/halfEdgeMesh.h
-scene.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/scene.h
 
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/primitive.h
 ../intersection.h
@@ -365,24 +195,6 @@ CGL/CGL.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/CGL/CGL.h
 primitive.h
 /Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/primitive.h
-vector
--
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/sphere.h
-object.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/object.h
-primitive.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/primitive.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/triangle.h
-object.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/object.h
-primitive.h
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/static_scene/primitive.h
-
-/Users/JerryWang/Desktop/Berkeley/2019 Spring/184/hw/p3-2-pathtracer-JerryJiehanWang/src/work_queue.h
-mutex
--
 vector
 -
 

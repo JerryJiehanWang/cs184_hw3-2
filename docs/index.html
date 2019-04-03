@@ -1,6 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async>
+    </script>
 <style>  
     div.padded {  
       padding-top: 0px;  
@@ -9,7 +11,7 @@
       padding-left: 100px;  
     }  
   </style> 
-<title>Your Name  |  CS 184</title>
+<title>Jiehan Wang  |  CS 184</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
@@ -98,19 +100,178 @@
         </ul>
 
         <h2 align="middle">Part 2: Microfacet Materials</h2>
+        <p>In this part, we implement BSDF of micro facet surface, which enable us to simulate surfaces like metal.
+        Basically, we follow the formula \(\frac{F(w_i) * G(w_o, w_i) * D(h)}{4 * (n * w_o) * (n * w_i)}\), where where F is the Fresnel term,
+            G is the shadowing-masking term, and D is the normal distribution
+            function (NDF). Then we use the BSDF importance sampling to sample outgoing ray
+        from the direction where the lights are most likely to reflect.</p>
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                        <img src="images/p2_alpha_05.png" width="480px" />
+                        <figcaption align="middle">\(\alpha = 0.5\)</figcaption>
+                    <td align="middle">
+                        <img src="images/p2_alpha_025.png" width="480px" />
+                        <figcaption align="middle">\(\alpha = 0.25\)</figcaption>
+                </tr>
+                <tr>
+                    <td align="middle">
+                        <img src="images/p2_alpha_005.png" width="480px" />
+                        <figcaption align="middle">\(\alpha = 0.05\)</figcaption>
+                    <td align="middle">
+                        <img src="images/p2_alpha_0005.png" width="480px" />
+                        <figcaption align="middle">\(\alpha = 0.005\)</figcaption>
+                </tr>
+            </table>
+        </div>
+        <p>\(\alpha\) determines the smoothness of the surface. The smaller \(\alpha\) is
+        the smoother the surface is. In the rendered images above, when \(\alpha\) is small (0.5),
+        the microfacet behaves like diffuse surface. When \(\alpha\) decreases, it behaves more like
+        a mirror surface. Also notice that when \(\alpha\) is small, there are more white noisy specks
+        on the image. That's because smaller \(\alpha\) value makes the BSDF more specular.</p>
+
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                        <img src="images/p2_uniform.png" width="480px" />
+                        <figcaption align="middle">Cosine Hemisphere Sampling</figcaption>
+                    <td align="middle">
+                        <img src="images/p2_importance.png" width="480px" />
+                        <figcaption align="middle">BSDF importance Sampling</figcaption>
+                </tr>
+            </table>
+        </div>
+        <p>The above two images show the difference between cosine hemisphere sampling and importance sampling. The uniform sampling is
+        obviously more noisy than the importance sampling. This is because when we perform cosine hemisphere sampling,
+        the direction of the outgoing rays are uniform distributed. But for microfacet material,
+        the directions of the valid outgoing rays falls within a range of angles. Thus, uniform sampling will result in
+        most of the rays not falling in the range, turing a black speck on the image. BSDF importance Sampling
+        will not have the problem, because it importance samples from the valid range of the outgoing ray directions.
+        The smaller \(\alpha\) is, the more noise will be in the cosine hemisphere sampling, because it makes the valid
+        angle range of the outgoing rays smaller.
+        </p>
+
+        <div align="center">
+            <img src="images/p2_dragon_al.png" width="480px" />
+        </div>
+        <p align="middle"> I change the parameter of CBdragon, which corresponds to Aluminum.</p>
+
+    <h2 align="middle">Part 3: Environment Light</h2>
+        <p>Environment lighting enables us to simulate the lighting in the real world, where the light sources are comming
+        from all directions on the sphere and the light sources are infinite distance from the object, which
+        means the incoming rays are parallel. Generally, we put environment light inside a texture, and we sample from the
+        texture to get the correct lighting for difference places on the object. For sampling method, we calculate the
+        probability distribution of every pixel of the texture, and set the pdf of the sampling ray accordingly.</p>
+
+        <div align="center">
+            <img src="images/field_img.jpeg" width="480px" />
+            <img src="images/p3_debug.png" width="480px" />
+        </div>
+        <p align="middle"> The exr file I'm using and the probability distribution of this texture.</p>
+
+        <div align="center">
+            <table style="width=100%">
+            <tr>
+                <td align="middle">
+                    <img src="images/p3_bunny_uniform.png" width="480px" />
+                    <figcaption align="middle">Uniform Sampling</figcaption>
+                <td align="middle">
+                    <img src="images/p3_bunny_importance.png" width="480px" />
+                    <figcaption align="middle">Importance Sampling</figcaption>
+            </tr>
+            </table>
+        </div>
+        <p>The importance sampling looks brighter and with less noise. That's because
+            when uniform sampling, there's lower probability that the ray will hit any valid light sources, resulting in more
+            samples for uniform sampling to converge.</p>
+
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                        <img src="images/p3_bunny_cu_uniform.png" width="480px" />
+                        <figcaption align="middle">Uniform Sampling</figcaption>
+                    <td align="middle">
+                        <img src="images/p3_bunny_cu_importance.png" width="480px" />
+                        <figcaption align="middle">Importance Sampling</figcaption>
+                </tr>
+            </table>
+        </div>
+
+        <p>The importance sampling has less noise than the uniform sampling, especially in the reflection area (brighter
+            area) . The
+        uniform sampling didn't quite capture the correct behavior of the reflecting surface of Copper. We can see it
+        from the edge of the bunny (importance is darker than uniform), and highlight area of the bunny (importance is
+        brighter than uniform). Also, the diffuse base of importance is brighter than that of uniform. That's because
+        when uniform sampling, there's lower probability that the ray will hit any valid light sources, resulting in more
+        samples for uniform sampling to converge.</p>
+
+    <h2 align="middle">Part 4: Depth of Field</h2>
+        <p> Pinhole camera is a simpler model, which only has an aperture and no depth of field. The light goes through
+        the aperture and projected on the image plane. Lights come different depth will all be focused on the image plane.
+        Thin-lens camera is more like a real camera, which we model it as a convex lens with no thickness. Lights hitting
+        different parts of the lens will be refracted differently, resulting in lights come from different parts of the
+        scene(different place, different depth etc.) will focused differently by the lens. The focusing effect of the
+        image will be determined by the aperture size (length of the thin-lens) and focal distance (distance from camera
+        to plane of focus.</p>
+
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                        <img src="images/p4_d_1.png" width="480px" />
+                        <figcaption align="middle">Focal distance = 1</figcaption>
+                </tr>
+                <tr>
+                    <td align="middle">
+                        <img src="images/p4_d_2.png" width="480px" />
+                        <figcaption align="middle">Focal distance = 2</figcaption>
+                    <td align="middle">
+                        <img src="images/p4_d_4.png" width="480px" />
+                        <figcaption align="middle">Focal distance = 4</figcaption>
+                </tr>
+                <tr>
+                    <td align="middle">
+                        <img src="images/p4_d_8.png" width="480px" />
+                        <figcaption align="middle">Focal distance = 8</figcaption>
+                    <td align="middle">
+                        <img src="images/p4_d_16.png" width="480px" />
+                        <figcaption align="middle">Focal distance = 16</figcaption>
+                </tr>
+            </table>
+        </div>
+        <p align="center">As we can see from the pictures, any focal distances that is too large or too small will
+            make the object not focused, looking blurry.
+            That's because we need the correct focal distance to make the focal plane align with the object.</p>
+
+        <div align="center">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                        <img src="images/p4_b_01.png" width="480px" />
+                        <figcaption align="middle">Aperture size = 0.1</figcaption>
+                    <td align="middle">
+                        <img src="images/p4_b_001.png" width="480px" />
+                        <figcaption align="middle">Aperture size = 0.01</figcaption>
+                </tr>
+                <tr>
+                    <td align="middle">
+                        <img src="images/p4_b_0005.png" width="480px" />
+                        <figcaption align="middle">Aperture size = 0.0005</figcaption>
+                    <td align="middle">
+                        <img src="images/p4_b_00001.png" width="480px" />
+                        <figcaption align="middle">Aperture size = 0.0001</figcaption>
+                </tr>
+            </table>
+        </div>
+        <p align="center">As we increase the aperture size, the depth of field is decreasing. The smaller the aperture
+        size, the larger the depth of field, which the thin lens is more like a pinhole camera model. That's because we
+        uniform samples from the disk, and it depends on the size of the lens. If the lens is too small, we basically
+        can only sample from one point, which is the center of the lens.</p>
 
 
-
-    <h2 align="middle">A Few Notes On Webpages</h2>
-        <p>Here are a few problems students have encountered in the past. You will probably encounter these problems at some point, so don't wait until right before the deadline to check that everything is working. Test your website on the instructional machines early!</p>
-        <ul>
-        <li>Your main report page should be called index.html.</li>
-        <li>Be sure to include and turn in all of the other files (such as images) that are linked in your report!</li>
-        <li>Use only <em>relative</em> paths to files, such as <pre>"./images/image.jpg"</pre>
-        Do <em>NOT</em> use absolute paths, such as <pre>"/Users/student/Desktop/image.jpg"</pre></li>
-        <li>Pay close attention to your filename extensions. Remember that on UNIX systems (such as the instructional machines), capitalization matters. <pre>.png != .jpeg != .jpg != .JPG</pre>
-        <li>Be sure to adjust the permissions on your files so that they are world readable. For more information on this please see this tutorial: <a href="http://www.grymoire.com/Unix/Permissions.html">http://www.grymoire.com/Unix/Permissions.html</a></li>
-        <li>And again, test your website on the instructional machines early!</li>
 </div>
 </body>
 </html>
